@@ -1,0 +1,35 @@
+.container-block {
+  display: flex;
+  height: 600px;
+  align-items: flex-end;
+  margin-left: 40px;
+}
+.container-title {
+  margin-left: 40px;
+  display: flex;
+  div {
+    width: 40px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+  }
+}
+.container-grid {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  width: 40px;
+  height: 600px;
+  div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 40px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    font-size: 10px;
+  }
+}
+
