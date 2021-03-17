@@ -18,13 +18,10 @@ export class MockService {
     return {value: Math.floor(Math.random() * 500)};
   }
   createData$(): void {
-    const data$ = timer(this.start, this.repeat)
+    timer(this.start, this.repeat)
       .subscribe(() => {
         this.dataArr = new Array(this.dataBlocks).fill(null).map(this.generateData);
         this.data.next(this.dataArr);
       });
-  }
-  createDataOnce(): MockData[] {
-    return new Array(this.dataBlocks).fill(null).map(this.generateData);
   }
 }
